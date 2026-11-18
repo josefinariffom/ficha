@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#100f0d">
+  <meta name="description" content="Portafolio de Josefina Riffo: marketing digital, creación de contenido y proyectos creativos.">
+  <title>Josefina Riffo — Portafolio</title>
+  <style>
+    :root{color-scheme:dark;--ink:#100e0c;--paper:#ebddc7;--red:#a63334}
+    *,*:before,*:after{box-sizing:border-box}
+    html{scroll-behavior:auto}
+    body{margin:0;background:var(--ink);color:var(--paper);font-family:Georgia,'Times New Roman',serif}
+    button,a{-webkit-tap-highlight-color:transparent}
+    .sr-only{position:absolute!important;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+    .skip{position:fixed;top:-80px;left:14px;padding:12px;background:#211712;color:#fff;z-index:60}
+    .skip:focus{top:12px}
+    .screen[hidden]{display:none!important}
+    .screen{min-height:100dvh;display:flex;justify-content:center;align-items:flex-start;background:#0c0b09;animation:appear .24s ease-out both}
+    @keyframes appear{from{opacity:.65}to{opacity:1}}
+    @media (prefers-reduced-motion:reduce){.screen{animation:none!important}.menu{transition:none!important}}
+    .poster{position:relative;width:min(100%,942px);line-height:0;flex:none}
+    .poster>img{display:block;width:100%;height:auto;user-select:none;-webkit-user-drag:none}
+    .poster--desktop{display:none}
+    .hotspot{position:absolute;z-index:2;display:block;background:transparent;border:0;box-shadow:none;padding:0;margin:0;cursor:pointer;text-decoration:none;overflow:hidden;color:transparent;font-size:0;line-height:0}
+    .hotspot:focus-visible{outline:3px solid #f1ddd0;outline-offset:-3px;background:#a5383526}
+    .navhit{top:1.1%;left:86%;width:12%;height:5.0%}
+    /* Coordenadas relativas a las fotografías aprobadas; no se cambian sus píxeles. */
+    .hero-cta{top:86.8%;left:16.2%;width:66.0%;height:6.2%}
+    .contact-mail{top:38.3%;left:19%;width:59%;height:8.8%}
+    .contact-linkedin{top:48.1%;left:18.6%;width:61%;height:8.9%}
+    .contact-cv{top:58.15%;left:18.8%;width:61%;height:9%}
+    .contact-phone{top:71.2%;left:26.8%;width:48%;height:5.8%}
+    #proyectos{background:#141210}
+    .project-frame{display:block;width:100%;height:100dvh;border:0;background:#141210}
+    .menu[hidden]{display:none!important}
+    .menu{position:fixed;inset:0;z-index:50;display:flex;align-items:center;justify-content:center;padding:26px 18px;background:#100d0cf6;backdrop-filter:blur(9px);-webkit-backdrop-filter:blur(9px)}
+    .menu-panel{width:min(100%,680px);border-top:1px solid #bcab97;border-bottom:1px solid #bcab97;padding:28px 12px 36px;text-align:center}
+    .menu-title{font:13px 'Courier New',monospace;letter-spacing:.17em;color:#bcae9f;margin:0 0 22px}
+    .menu-links{display:flex;flex-direction:column;align-items:center;gap:14px}
+    .menu-links a{font:clamp(27px,7vw,54px)/1.2 Georgia,serif;text-transform:uppercase;text-decoration:none;color:#e8d6bd;letter-spacing:-.025em;padding:5px 15px}
+    .menu-links a:hover,.menu-links a:focus-visible,.menu-links a[aria-current=page]{color:#c74c4e;text-decoration:underline;text-underline-offset:8px}
+    .menu-close{position:absolute;top:max(15px,env(safe-area-inset-top));right:22px;border:1px solid #bfae97;background:#18120f;color:#eedccc;font:24px Georgia,serif;padding:8px 16px;cursor:pointer}
+    body.menu-open{overflow:hidden}
+    @media(min-width:900px){
+      #inicio .poster--mobile{display:none}
+      #inicio .poster--desktop{display:block;width:min(100%,calc(100dvh * 1.777));max-width:1672px;margin:auto}
+      #inicio{align-items:center}
+      .desktop-cta{left:3.35%;top:83%;width:26.5%;height:7.9%}
+      .desktop-link-home{left:44.7%;top:1.2%;width:6.5%;height:6.7%}
+      .desktop-link-profile{left:52.8%;top:1.2%;width:6.5%;height:6.7%}
+      .desktop-link-experience{left:60.4%;top:1.2%;width:9.2%;height:6.7%}
+      .desktop-link-projects{left:71.2%;top:1.2%;width:9%;height:6.7%}
+      .desktop-link-contact{left:83%;top:1.2%;width:9%;height:6.7%}
+      .desktop-menu{left:93.8%;top:1%;width:5%;height:7%}
+    }
+  </style>
+</head>
+<body>
+<a class="skip" href="#navegacion" id="skip-nav">Ir al menú</a>
+<main id="principal">
+  <section class="screen" id="inicio" aria-label="INICIO">
+    <div class="poster poster--mobile">
+      <img src="assets/inicio_movil.png" alt="Portada aprobada: collage original de Josefina Riffo, creatividad de origen, estrategia por elección." fetchpriority="high">
+      <button type="button" class="hotspot navhit" data-menu aria-label="Abrir menú de navegación">Abrir menú</button>
+      <a class="hotspot hero-cta" href="#perfil" aria-label="Explorar portafolio: ir a PERFIL">Explorar portafolio</a>
+    </div>
+    <div class="poster poster--desktop">
+      <img src="assets/inicio_escritorio.png" alt="Portada original aprobada de escritorio: Josefina Riffo, collage editorial y acceso a explorar portafolio.">
+      <a class="hotspot desktop-cta" href="#perfil" aria-label="Explorar portafolio: ir a PERFIL">Explorar portafolio</a>
+      <a class="hotspot desktop-link-home" href="#inicio" aria-label="INICIO">Inicio</a>
+      <a class="hotspot desktop-link-profile" href="#perfil" aria-label="PERFIL">Perfil</a>
+      <a class="hotspot desktop-link-experience" href="#experiencia" aria-label="EXPERIENCIA">Experiencia</a>
+      <a class="hotspot desktop-link-projects" href="#proyectos" aria-label="PROYECTOS">Proyectos</a>
+      <a class="hotspot desktop-link-contact" href="#contacto" aria-label="CONTACTO">Contacto</a>
+      <button type="button" class="hotspot desktop-menu" data-menu aria-label="Abrir menú de navegación">Abrir menú</button>
+    </div>
+  </section>
+  <section class="screen" id="perfil" aria-label="PERFIL - SOBRE MÍ" hidden>
+    <div class="poster">
+      <img src="assets/perfil_movil.png" alt="Diseño de PERFIL aprobado, fotografía personal original, formación, herramientas digitales y habilidades blandas." loading="lazy">
+      <button type="button" class="hotspot navhit" data-menu aria-label="Abrir menú de navegación">Abrir menú</button>
+    </div>
+  </section>
+  <section class="screen" id="experiencia" aria-label="EXPERIENCIA" hidden>
+    <div class="poster">
+      <img src="assets/experiencia_movil.png" alt="Diseño aprobado de EXPERIENCIA con cronología de creadora de contenido, REF Santiago y proyectos audiovisuales y de comunicación." loading="lazy">
+      <button type="button" class="hotspot navhit" data-menu aria-label="Abrir menú de navegación">Abrir menú</button>
+    </div>
+  </section>
+  <section class="screen" id="proyectos" aria-label="PROYECTOS" hidden>
+    <iframe class="project-frame" id="project-frame" src="proyectos/index.html" loading="lazy" title="Cuatro categorías de proyectos interactivos con texto a la izquierda y carruseles de fotografías originales a la derecha"></iframe>
+  </section>
+  <section class="screen" id="contacto" aria-label="CONTACTO" hidden>
+    <div class="poster">
+      <img src="assets/contacto_movil.png" alt="CONTACTO, collage aprobado con botones de correo, LinkedIn, descargar CV y teléfono." loading="lazy">
+      <button type="button" class="hotspot navhit" data-menu aria-label="Abrir menú de navegación">Abrir menú</button>
+      <a class="hotspot contact-mail" href="mailto:Josefina.riffom@gmail.com" aria-label="Enviar correo a Josefina.riffom@gmail.com">Enviar correo</a>
+      <a class="hotspot contact-linkedin" href="https://www.linkedin.com/in/josefina-riffo/" target="_blank" rel="noopener noreferrer" aria-label="Abrir el LinkedIn de Josefina Riffo en otra pestaña">LinkedIn</a>
+      <a class="hotspot contact-cv" href="assets/CV_JOSEFINARIFFO.pdf" download="CV_JOSEFINARIFFO.pdf" type="application/pdf" aria-label="Descargar currículum de Josefina Riffo en PDF">Descargar CV</a>
+      <a class="hotspot contact-phone" href="tel:+34647229363" aria-label="Llamar al +34 647 229 363">Llamar</a>
+    </div>
+  </section>
+</main>
+<nav class="menu" id="navegacion" aria-label="Navegación principal" hidden>
+  <button type="button" class="menu-close" id="menu-close" aria-label="Cerrar menú">×</button>
+  <div class="menu-panel">
+    <p class="menu-title">JOSEFINA RIFFO / PORTAFOLIO</p>
+    <div class="menu-links">
+      <a href="#inicio">INICIO</a>
+      <a href="#perfil">PERFIL</a>
+      <a href="#experiencia">EXPERIENCIA</a>
+      <a href="#proyectos">PROYECTOS</a>
+      <a href="#contacto">CONTACTO</a>
+    </div>
+  </div>
+</nav>
+<script>
+(function(){'use strict';
+ const names=['inicio','perfil','experiencia','proyectos','contacto'];
+ const screens=names.map(n=>document.getElementById(n));
+ const menu=document.getElementById('navegacion');
+ const menuClose=document.getElementById('menu-close');
+ let previousFocus=null;
+ function current(){return names.includes(location.hash.slice(1))?location.hash.slice(1):'inicio'}
+ function activate(){
+   const name=current();
+   screens.forEach(s=>s.hidden=s.id!==name);
+   menu.querySelectorAll('a').forEach(a=>a.setAttribute('aria-current',a.hash==='#'+name?'page':'false'));
+   hideMenu(false);
+   window.scrollTo({top:0,left:0,behavior:'instant'});
+   document.title=(name==='inicio'?'Josefina Riffo':name.toUpperCase()+' — Josefina Riffo')+' | Portafolio';
+ }
+ function showMenu(){
+   if(!menu.hidden)return;
+   previousFocus=document.activeElement;
+   menu.hidden=false;
+   document.body.classList.add('menu-open');
+   menuClose.focus();
+ }
+ function hideMenu(restore=true){
+   const wasOpen=!menu.hidden;
+   menu.hidden=true;
+   document.body.classList.remove('menu-open');
+   if(restore&&wasOpen&&previousFocus&&previousFocus.focus)previousFocus.focus();
+ }
+ document.querySelectorAll('[data-menu]').forEach(el=>el.addEventListener('click',showMenu));
+ menuClose.addEventListener('click',()=>hideMenu());
+ menu.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>hideMenu(false)));
+ menu.addEventListener('click',e=>{if(e.target===menu)hideMenu()});
+ document.getElementById('skip-nav').addEventListener('click',e=>{e.preventDefault();showMenu()});
+ window.addEventListener('hashchange',activate);
+ window.addEventListener('message',e=>{
+   const frame=document.getElementById('project-frame');
+   if(e.source!==frame.contentWindow||!e.data||e.data.portfolioJR!==true)return;
+   if(e.data.command==='home')location.hash='#inicio';
+   if(e.data.command==='menu')showMenu();
+ });
+ document.addEventListener('keydown',e=>{
+   if(e.key==='Escape'&&!menu.hidden)hideMenu();
+   if(e.key==='Tab'&&!menu.hidden){
+     const els=[...menu.querySelectorAll('button,a')];
+     const first=els[0],last=els[els.length-1];
+     if(e.shiftKey&&document.activeElement===first){e.preventDefault();last.focus()}
+     else if(!e.shiftKey&&document.activeElement===last){e.preventDefault();first.focus()}
+   }
+ });
+ activate();
+})();
+</script>
+</body>
+</html>
